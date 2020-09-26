@@ -1,7 +1,6 @@
 package com.buzhovych.repository;
 
 import com.buzhovych.models.Notebook;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.stereotype.Repository;

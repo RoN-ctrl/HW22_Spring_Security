@@ -28,16 +28,13 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .csrf().disable()
                 .authorizeRequests()
                 .antMatchers("/notebooks").permitAll()
-//                .antMatchers("/registration").not().fullyAuthenticated()
                 .antMatchers("/notebooks/**").hasRole("USER")
-//                .antMatchers("/notebooks").permitAll()
                 .and()
                 .formLogin().loginPage("/login")
-                .defaultSuccessUrl("/notebooks").permitAll()
+                .defaultSuccessUrl("/").permitAll()
                 .and()
                 .logout().permitAll()
-                .logoutSuccessUrl("/notebooks")
-                ;
+                .logoutSuccessUrl("/");
     }
 
     @Autowired

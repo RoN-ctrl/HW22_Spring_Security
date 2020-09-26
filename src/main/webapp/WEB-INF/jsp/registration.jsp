@@ -6,13 +6,13 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Регистрация</title>
+  <title>Sign up</title>
 </head>
 
 <body>
 <div>
   <form:form method="POST" modelAttribute="userForm">
-    <h2>Регистрация</h2>
+    <h2>Sign up</h2>
     <div>
       <form:input type="text" path="username" placeholder="Username"
                   autofocus="true"></form:input>
@@ -28,9 +28,9 @@
       <form:errors path="password"></form:errors>
         ${passwordError}
     </div>
-    <button type="submit">Зарегистрироваться</button>
+    <button type="submit">Sign up</button>
   </form:form>
-  <a href="/">Главная</a>
+  <a href="/">Main page</a>
 </div>
 </body>
 </html>
